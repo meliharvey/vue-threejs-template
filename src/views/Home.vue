@@ -8,7 +8,7 @@
 // @ is an alias to /src
 import * as THREE from 'three'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { mapState, mapGetters } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
   name: "home",
@@ -71,12 +71,10 @@ export default {
       this.renderer.setSize( this.container.clientWidth, this.container.clientHeight );
     },
     addModel: function () {
-      this.$store.subscribe((mutation, state) => {
+      this.$store.subscribe((mutation) => {
         switch (mutation.type) {
           case 'setModel':
-            console.log('try', this.model)
             this.scene.add(this.model)
-            console.log(mapState, state)
             break
         }
       })
