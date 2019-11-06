@@ -1,24 +1,10 @@
 # vue-threejs-template
 
-## Project setup
-```
-npm install
-```
+The is a starter template for a website that uses Vuejs and Threejs. It sets up an initial threejs canvas and manages loading and 3d model from a vuex store.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Links
+See [Vuejs](https://www.vuejs.org/).
+See [Threejs](https://https://threejs.org/).
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Screenshot
+![Screenshot of vue-threejs-template](./screenshot.png)
